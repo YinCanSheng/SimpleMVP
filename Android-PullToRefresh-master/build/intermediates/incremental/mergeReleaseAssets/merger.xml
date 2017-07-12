@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\chenhong\Study\android\work\as\erp\MyApplication\Android-PullToRefresh-master\assets"/><source path="D:\chenhong\Study\android\work\as\erp\MyApplication\Android-PullToRefresh-master\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\chenhong\Study\android\work\as\erp\MyApplication\Android-PullToRefresh-master\build-types\release\assets"/></dataSet></merger>

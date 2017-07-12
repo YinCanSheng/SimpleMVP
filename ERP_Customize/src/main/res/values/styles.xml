@@ -1,0 +1,49 @@
+<resources>
+
+    <!--不带导航-->
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--app统一主题-无导航-白底-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/cornflowerblue</item>
+        <item name="colorPrimaryDark">@color/cornflowerblue</item>
+        <item name="colorAccent">@color/menu_bule</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--登录页主题-->
+    <style name="AppLoginTheme" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/cornflowerblue</item>
+        <item name="colorPrimaryDark">@color/cornflowerblue</item>
+        <item name="colorAccent">@color/menu_bule</item>
+    </style>
+
+    <!-- 解决启动页白屏黑屏问题 -->
+    <style name="ThemeStartUp" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@drawable/startuptest</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!--蓝色-Toolbar-->
+    <style name="toolbar_blue_theme" parent="AppTheme">
+        <item name="colorControlNormal">@color/white</item>
+        <!--<item name="android:homeAsUpIndicator">@mipmap/ic_launcher</item>-->
+    </style>
+
+    <!--ActivityHu-->
+    <style name="SwipeBackLayout">
+        <item name="edge_size">25dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+</resources>

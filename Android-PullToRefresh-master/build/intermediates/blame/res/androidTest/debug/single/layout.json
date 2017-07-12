@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\chenhong\\Study\\android\\work\\as\\erp\\MyApplication\\Android-PullToRefresh-master\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "D:\\chenhong\\Study\\android\\work\\as\\erp\\MyApplication\\Android-PullToRefresh-master\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "E:\\chenhong\\mas\\MyApplication\\Android-PullToRefresh-master\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "E:\\chenhong\\mas\\MyApplication\\Android-PullToRefresh-master\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "E:\\chenhong\\mas\\MyApplication\\Android-PullToRefresh-master\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "E:\\chenhong\\mas\\MyApplication\\Android-PullToRefresh-master\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "D:\\chenhong\\Study\\android\\work\\as\\erp\\MyApplication\\Android-PullToRefresh-master\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "D:\\chenhong\\Study\\android\\work\\as\\erp\\MyApplication\\Android-PullToRefresh-master\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    }
+]

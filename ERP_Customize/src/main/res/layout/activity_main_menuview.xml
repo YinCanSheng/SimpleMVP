@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/menu_bule"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_menuview_AccountInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/CircularImageView_menuView_Avatar"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="穿封百叶"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="城主-Boss"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <ch.erp.management.mvp.ui.customView.MDefCircularImageView
+            android:id="@+id/CircularImageView_menuView_Avatar"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/sn"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.5"
+        android:background="@color/fragmentBack"/>
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="3"
+        app:footer="@layout/acfun_footer"
+        app:header="@layout/acfun_header">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:orientation="vertical">
+                <!---->
+                <LinearLayout
+                    android:id="@+id/Linearlayout_menuview_RoleManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_menuview"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="40dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/erp_standardImagesize"
+                        android:layout_height="@dimen/erp_standardImagesize"
+                        android:contentDescription="@null"
+                        android:src="@drawable/jsgl"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:alpha="0.6"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="角色管理"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/erp_standardfont"/>
+
+                </LinearLayout>
+
+                <!--邀請員工-->
+                <LinearLayout
+                    android:id="@+id/LinearLayout_menuview_InviteEmployees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_menuview"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="40dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/erp_standardImagesize"
+                        android:layout_height="@dimen/erp_standardImagesize"
+                        android:contentDescription="@null"
+                        android:src="@drawable/yqyg"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:alpha="0.6"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="邀请员工"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/erp_standardfont"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_menuview_SwitchCompanies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_menuview"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="40dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/erp_standardImagesize"
+                        android:layout_height="@dimen/erp_standardImagesize"
+                        android:contentDescription="@null"
+                        android:src="@drawable/qhgs"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:alpha="0.6"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="切换公司"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/erp_standardfont"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_menuview_SystemSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_menuview"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="40dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/erp_standardImagesize"
+                        android:layout_height="@dimen/erp_standardImagesize"
+                        android:contentDescription="@null"
+                        android:src="@drawable/xtsz"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:alpha="0.6"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="系统设置"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/erp_standardfont"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+</LinearLayout>

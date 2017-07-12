@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 表示已经选中 是一种状态 -->
+    <item android:drawable="@color/fragmentBack" android:state_checked="true"></item>
+    <!-- 表示按下的动作 -->
+    <item android:drawable="@color/fragmentBack" android:state_pressed="true"></item>
+
+    <item android:drawable="@color/menu_bule"></item>
+</selector>

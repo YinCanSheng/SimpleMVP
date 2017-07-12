@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <!--中部-滑动视图-->
+    <ch.erp.management.mvp.ui.customView.MDefViewPager
+        android:id="@+id/MViewPager_MainActivity_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true"/>
+    <!--底部导航-->
+    <LinearLayout
+        android:id="@+id/LinearLayout_MainActivity_bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <!--分隔线-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:alpha="0.2"
+            android:background="@color/login_wangjimimaandzhuce_shenlanse" />
+        <!--導航欄-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ch.erp.management.mvp.ui.customView.MDefRippleView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                ripple:rv_type="rectangle"
+                ripple:rv_zoomDuration="500">
+
+                <LinearLayout
+                    android:id="@+id/LinearLay_MainActivity_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_bottom_navigation"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="7dp">
+
+                    <ImageView
+                        android:id="@+id/ImageView_MainActivity_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@null"
+                        android:src="@drawable/shouyeq" />
+
+                    <TextView
+                        android:id="@+id/TextView_MainActivity_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="首页"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </ch.erp.management.mvp.ui.customView.MDefRippleView>
+
+            <ch.erp.management.mvp.ui.customView.MDefRippleView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                ripple:rv_type="rectangle"
+                ripple:rv_zoomDuration="500">
+
+                <LinearLayout
+                    android:id="@+id/LinearLay_MainActivity_Stock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/selector_bottom_navigation"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="7dp">
+
+
+                    <ImageView
+                        android:id="@+id/ImageView_MainActivity_Stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@null"
+                        android:src="@drawable/kucunq" />
+
+
+                    <TextView
+                        android:id="@+id/TextView_MainActivity_Stock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="库存"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </ch.erp.management.mvp.ui.customView.MDefRippleView>
+
+            <ch.erp.management.mvp.ui.customView.MDefRippleView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                ripple:rv_type="rectangle"
+                ripple:rv_zoomDuration="500">
+
+                <LinearLayout
+                    android:id="@+id/LinearLay_MainActivity_Statement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_bottom_navigation"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="7dp">
+
+
+                    <ImageView
+                        android:id="@+id/ImageView_MainActivity_Statement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@null"
+                        android:src="@drawable/baobiaoq" />
+
+
+                    <TextView
+                        android:id="@+id/TextView_MainActivity_Statement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="报表"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </ch.erp.management.mvp.ui.customView.MDefRippleView>
+
+            <ch.erp.management.mvp.ui.customView.MDefRippleView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                ripple:rv_type="rectangle"
+                ripple:rv_zoomDuration="500">
+
+                <LinearLayout
+                    android:id="@+id/LinearLay_MainActivity_Finance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_bottom_navigation"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="7dp">
+
+                    <ImageView
+                        android:id="@+id/ImageView_MainActivity_Finance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@null"
+                        android:src="@drawable/caiwuq" />
+
+                    <TextView
+                        android:id="@+id/TextView_MainActivity_Finance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="财务"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </ch.erp.management.mvp.ui.customView.MDefRippleView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/AppBarLayout_MainActivity_head"
+        android:alpha="0.2"
+        android:background="@color/login_wangjimimaandzhuce_shenlanse"
+        android:id="@+id/view"/>
+
+    <!--顶部导航栏-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/AppBarLayout_MainActivity_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:theme="@style/toolbar_blue_theme"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <include
+            android:id="@+id/toolbar_MainActivity_head"
+            layout="@layout/erp_title_toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+</RelativeLayout>

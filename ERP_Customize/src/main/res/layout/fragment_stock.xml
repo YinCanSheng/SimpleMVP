@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fragmentBack">
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/SpringView_MStockFragment_Rebound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+                <!--庫存-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.8"
+                    android:text="库存"
+                    android:textSize="17sp"/>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_MStockFragment_InventoryStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_erp_item"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/erp_standardImagesize"
+                        android:layout_height="@dimen/erp_standardImagesize"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/caiwuq"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="库存状况"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/erp_standardfont"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/next"/>
+                </LinearLayout>
+
+                <!--庫存-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.8"
+                    android:text="采购"
+                    android:textSize="17sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout_MStockFragment_PurchaseWare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_erp_item"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/erp_standardImagesize"
+                            android:layout_height="@dimen/erp_standardImagesize"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/caiwuq"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="采购入库"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/erp_standardfont"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/next"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/fragmentBack"/>
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout_MStockFragment_PurchaseReturns"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_erp_item"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/erp_standardImagesize"
+                            android:layout_height="@dimen/erp_standardImagesize"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/caiwuq"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="采购退货"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/erp_standardfont"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/next"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+    <!--等待框-->
+    <include
+        android:id="@+id/MStockFragment_loading"
+        layout="@layout/erp_fragment_loading"/>
+</RelativeLayout>
+
